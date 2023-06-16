@@ -1,0 +1,11 @@
+.itemCard{
+  width: 18rem;
+  height: 12rem;
+  margin-right: 3rem;
+  background-color: #fff;
+  margin-bottom: 4rem;
+}
+.imageCardFood{
+  height: auto;
+  width: 100%;
+}

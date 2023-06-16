@@ -1,0 +1,674 @@
+/*------------------------------------RESET----------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to top, #f6f6f6, #faf0f2);
+}
+
+/*------------------------------------HEADER--------------------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #ac1d30;
+  border: 2px black solid;
+  padding-left: 6rem;
+  letter-spacing: 0.1rem;
+}
+
+.titulo {
+  font-family: "Dancing Script";
+  font-size: 4.5rem;
+  color: aliceblue;
+  text-shadow: 3px 3px 5px black;
+  margin-right: 8rem;
+  text-decoration: none;
+}
+
+.img-menu {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  margin-right: 6rem;
+  box-shadow: 2px 2px 3px black;
+  border-radius: 2.5rem;
+}
+
+.img-menu:hover {
+  transform: rotateZ(10deg);
+  filter: drop-shadow(5px 5px 3px black);
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.texto-nav {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.texto-nav:hover {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.nav-item {
+  text-align: center;
+  font-family: fantasy;
+  background-color: #0a5a1b;
+  padding: 0.2rem;
+  text-shadow: 3px 2px 5px black;
+  border-radius: 20px;
+  box-shadow: 3px 2px 5px black;
+  color: aliceblue;
+}
+
+.nav-item:hover {
+  text-decoration: none;
+  background-color: #062a0c;
+  color: aliceblue;
+  transform: scale(1.1);
+}
+
+.button-carta {
+  text-decoration: none;
+  border: transparent;
+  background-color: #0a5a1b;
+  border-radius: 99px;
+}
+
+.button-carta:hover {
+  text-decoration: none;
+  border: transparent;
+  background-color: #062a0c;
+  border-radius: 99px;
+}
+
+.contador {
+  text-decoration: none;
+}
+
+.texto-nav {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.texto-nav:hover {
+  color: aliceblue;
+}
+
+.bandeja-comida {
+  filter: brightness(1.05);
+  mix-blend-mode: multiply;
+  display: block;
+  height: 3.5rem;
+  width: auto;
+  border-radius: 5rem;
+  background-color: white;
+}
+
+/*---------------------------------FOOTER--------------------------------------*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ac1d30;
+  border: 2px black solid;
+  color: aliceblue;
+}
+
+footer h3 {
+  font-size: 1rem;
+}
+
+footer div a {
+  bottom: 0;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: #0a5a1b;
+  padding: 0.8rem;
+  text-shadow: 3px 2px 5px black;
+  border-radius: 1.2rem;
+  box-shadow: 3px 2px 5px black;
+  font-size: 1rem;
+}
+
+footer div a:hover {
+  background-color: #083d13;
+  color: aliceblue;
+}
+
+.texto {
+  width: 25rem;
+  height: auto;
+  grid-area: texto;
+  justify-self: start;
+  align-self: center;
+}
+
+.carrusel {
+  grid-area: carrusel;
+}
+
+
+.foto-restaurante {
+  height: 35rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carrusel {
+  grid-area: carrusel;
+  box-shadow: 3px 2px 5px black;
+}
+
+.carouselContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.carouselCaption {
+  background-color: rgba(0, 0, 0, 0.330);
+}
+
+.main-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 0.1fr 0.8fr;
+  grid-template-areas:
+    "carrusel carrusel"
+    "subtitulo subtitulo"
+    "mapa texto";
+  row-gap: 1.5rem;
+  column-gap: 6rem;
+}
+
+.subtitulos {
+  font-family: EB Garamond;
+  font-size: 2rem;
+  grid-area: subtitulo;
+  display: flex;
+  justify-content: center
+}
+
+.mapa-ubicacion {
+  width: 25rem;
+  height: 20rem;
+}
+
+.contenedor-mapa {
+  grid-area: mapa;
+  width: 25rem;
+  height: 20rem;
+  justify-self: end;
+  align-self: center;
+}
+
+/*---------------------------------INDEX--------------------------------------*/
+/* carrusel */
+.main-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 0.1fr 0.8fr;
+  grid-template-areas: "carrusel carrusel" "h2 h2" "mapa texto";
+  row-gap: 1.5rem;
+  column-gap: 6rem;
+}
+
+.foto-restaurante {
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+}
+
+.carrusel {
+  grid-area: carrusel;
+  box-shadow: 3px 2px 5px black;
+}
+
+/* parte informativa del index */
+.subtitulos {
+  font-family: EB Garamond;
+  font-size: 2rem;
+  grid-area: h2;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.texto {
+  width: 25rem;
+  height: auto;
+  grid-area: texto;
+  justify-self: start;
+  align-self: center;
+}
+
+.mapa-ubicacion {
+  width: 25rem;
+  height: 20rem;
+}
+
+.contenedor-mapa {
+  grid-area: mapa;
+  width: 25rem;
+  height: 20rem;
+  box-shadow: 3px 2px 5px black;
+  justify-self: end;
+  align-self: center;
+}
+
+/*---------------------------------CONTACTO--------------------------------------*/
+.form-contacto {
+  border: 2px solid black;
+  width: 9.5rem;
+  height: 45rem;
+}
+
+.fondo-contacto {
+  background-image: url("../public/bandera-italia.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "h2" "form";
+  row-gap: 1rem;
+}
+
+.main-contacto {
+  display: grid;
+  grid-template-areas: "h2" "form";
+  row-gap: 1rem;
+}
+
+.subtitulo-contacto {
+  justify-self: center;
+  text-align: center;
+  font-size: 5rem;
+  color: aliceblue;
+  font-family: fantasy;
+  background-color: black;
+  border-radius: 0.5rem;
+  grid-area: h2;
+  padding: 0.3rem;
+  box-shadow: 3px 2px 5px black;
+  width: 70vh;
+  margin-top: 2rem;
+}
+
+.form-contacto {
+  background-color: whitesmoke;
+  box-shadow: 3px 2px 5px black;
+  font-size: 0.9rem;
+  width: 20rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 5rem;
+  grid-area: form;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.pregunta {
+  display: flex;
+  border: 1px solid black;
+  padding: 0.5rem;
+  width: 17rem;
+  margin-bottom: 15px;
+}
+
+.enviar {
+  background-color: #0b0b0b;
+  color: white;
+  font-family: fantasy;
+  font-size: 1rem;
+  width: 6rem;
+}
+
+.enviar:hover {
+  background-color: white;
+  color: black;
+  font-family: fantasy;
+  font-size: 1rem;
+  width: 6rem;
+  box-shadow: 3px 2px 5px black;
+}
+
+/*---------------------------------CARTA--------------------------------------*/
+.encargo {
+  z-index: 11;
+  flex-direction: column;
+  display: flex;
+  position: fixed;
+  top: 4.5rem;
+  right: 1rem;
+  gap: 0.6rem;
+  filter: drop-shadow(2px 2px 3px black);
+  height: 3rem;
+  border-radius: 1rem;
+}
+
+.main-carta {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.comida {
+  display: flex;
+  width: 14rem;
+  height: 10rem;
+  flex-direction: column;
+  font-family: "Karla";
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nombre-comida {
+  font-size: 1.6rem;
+}
+
+.texto-comida {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.achicar {
+  font-size: 1rem;
+}
+
+.precio {
+  font-family: 'Gentium Book Basic';
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.boton-pedido {
+  background-color: #0a5a1b;
+  color: aliceblue;
+  font-size: 0.9rem;
+  box-shadow: 3px 2px 5px black;
+  align-self: flex-end;
+}
+
+.boton-pedido:hover {
+  background-color: #063711;
+  color: aliceblue;
+}
+
+.plato:hover {
+  transform: scale(1.05);
+  transition: 1s;
+  box-shadow: 3px 2px 5px black;
+}
+
+.plato:hover .nombre-comida {
+  text-decoration: underline;
+}
+
+.foto-comida {
+  width: auto;
+  height: 10rem;
+  box-shadow: 1px 1px 2px black;
+  object-fit: cover;
+}
+
+.foto-pedido {
+  width: auto;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.descripcion-comida {
+  width: 13rem;
+  height: auto;
+  margin-top: 0.8rem;
+}
+
+/*---------------------------------VALORACION--------------------------------------*/
+.main-valoracion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+#fondo-chef {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form-valoracion {
+  background-color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+  box-shadow: 2px 3px 2px #1d1c1c;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.form-valoracion:hover {
+  box-shadow: 2px 2px 12px black;
+}
+
+.subtitulo-valoracion {
+  color: aliceblue;
+  font-family: fantasy;
+  background-color: #0f0f0f;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  box-shadow: 3px 2px 5px black;
+  margin-bottom: 1rem;
+  grid-area: h2;
+}
+
+/*---------------------------------NOSOTROS--------------------------------------*/
+.informacion-1,
+.informacion-2,
+.informacion-3,
+.informacion-4 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.imagen-informacion1,
+.imagen-informacion2,
+.imagen-informacion3,
+.imagen-informacion4 {
+  width: 30rem;
+  height: auto;
+  border-radius: 1.2rem;
+  box-shadow: 3px 2px 5px black;
+  margin-top: 2.4rem;
+  margin-bottom: 2.8rem;
+}
+
+.main-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-template-areas:
+    "img-1 info-1"
+    "info-2 img-2"
+    "img-3 info-3"
+    "info-4 img-4"
+    "footer footer";
+  column-gap: 2rem;
+  justify-content: space-around;
+}
+
+.informacion-1 {
+  grid-area: info-1;
+}
+
+.informacion-2 {
+  grid-area: info-2;
+}
+
+.informacion-3 {
+  grid-area: info-3;
+}
+
+.informacion-4 {
+  grid-area: info-4;
+}
+
+.imagen-informacion1 {
+  grid-area: img-1;
+  justify-self: flex-end;
+}
+
+.imagen-informacion2 {
+  grid-area: img-2;
+  justify-self: flex-start;
+}
+
+.imagen-informacion3 {
+  grid-area: img-3;
+  justify-self: flex-end;
+}
+
+.imagen-informacion4 {
+  grid-area: img-4;
+  justify-self: flex-start;
+}
+
+.texto-informacion {
+  width: 70%;
+  font-family: fantasy;
+  grid-area: texto;
+}
+
+.titulo-informacion {
+  font-family: "EB Garamond";
+  font-size: 2rem;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+.imageCardFood {
+  height: auto;
+  width: 100%;
+  box-shadow: 1px 1px 2px black;
+  object-fit: cover;
+
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+.image-container {
+  width: 100%;
+  height: 8rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 6px black;
+
+}
+
+.plato {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: 3rem;
+  width: 17rem;
+  height: 18rem;
+  margin: 2rem 2rem;
+  box-shadow: 1px 1px 6px black;
+}
+
+.plato:hover {
+  .text-price {
+    color: black;
+  }
+}
+
+.nombre-comida {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.card-text {
+  text-decoration: none;
+  color: black;
+  text-decoration-color: black
+}
+
+.text-price {
+  font-size: 1.5rem;
+}
+
+.text-price:hover {
+  color: black;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cargando {
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif
+}
+
+.cantidadItems {
+  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.stockItems {
+  font-size: 1rem;
+  color: #484545;
+  margin-left: 2rem;
+}
+
+.texto-nav {
+  background-color: #0a5a1b;
+  border-radius: 10px;
+  border: 1px black;
+}
+
+.nav-link:hover {
+  color: black;
+  scale: 1.3;
+}

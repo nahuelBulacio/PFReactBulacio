@@ -1,0 +1,29 @@
+.contador{
+  background-color: rgb(1, 1, 44);
+  width: 1.5rem;
+  height: auto;
+  border-radius: 99rem;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+}
+.cart-widget {
+  margin-top: .2em;
+  width: 2em;
+}
+
+.cart-container {
+  width: 3.6em;
+  height: 3.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 50%;
+
+}
+
+.cart-container p {
+  color: #fff;
+  font-size: .7em;
+}

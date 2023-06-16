@@ -1,0 +1,19 @@
+/* .purchaseSuccessContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.purchaseSuccessContainer {
+    font-size: 1.1em;
+}
+.title-purchase{
+    font-size: 3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.purchase-container{
+    height: 71vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
